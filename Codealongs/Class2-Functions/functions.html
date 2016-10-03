@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+</head>
+<body>
+
+
+<h1>Functions</h1>
+
+<script type="text/javascript">
+
+// function hoisting
+// function add(){
+// }
+	
+var color ="red";
+var color2 = "blue";	
+var color3;	
+
+add(2,3);
+substract(2,3);
+// multiple2(2,3);
+
+// console.log(color);
+
+function taco() {
+	var  type = "carne asada" ;
+	var beans = "black";
+	// console.log(salsa);
+} 
+
+function add(x,y) {
+	
+	var sum = x+y;
+	console.log(sum);
+	// console.log(y);
+	// console.log(x);
+	 console.log("fn add");
+	 // var x;
+	 return	sum;
+
+}
+
+
+function substract(x,y) {
+	var substract_result = x-y;
+	console.log(x);
+	console.log(y);
+	console.log("The result of substraction is:"+ substract_result)
+	// return substract_result;
+}
+function multiple(x,y) {
+	var multiple_result = x*y;
+		console.log(x);
+	console.log(y);
+
+	console.log("The result of multiplication is:"+ multiple_result)
+	// return multiple_result;
+}
+function divide(x,y) {
+	var divide_result = x/y;
+		console.log(x);
+	console.log(y);
+
+	console.log("The result of division is:" +divide_result)
+	// return divide_result;
+}
+function remainder(x,y) {
+	var remainder_result = x%y;
+		console.log(x);
+	console.log(y);
+
+	console.log("The result of remainder is:"+ remainder_result)
+	// return remainder_result;
+}
+
+var	multiple2 =function(x,y){
+console.log('fn multiple');
+var product =x*y;
+return product;
+
+}
+
+function outerFunction() {
+	var a = 5;
+	var	notB = innerFunction();
+	innerFunction();
+	add(20,30);
+	function innerFunction() {
+	var b = 3;
+	var c = a + b;
+	console.log("c",c);
+
+	}
+var d =a + notB;
+	console.log("d",d);
+
+}
+
+
+
+</script>
+
+</body>
+</html>
