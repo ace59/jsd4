@@ -1,0 +1,33 @@
+Objects
+
+- key/value pairs 
+-stores other data type in it
+
+Methods
+ function in object
+
+ -Object are collection of properties and methods
+ -You pick the name of the poperties and objects
+ -name is an identifier
+ -value can be any data type (string, number, array, object)
+ -colon between key value pair
+ -properties separated by comma
+ -contained within braces
+ -this property which returns to the current object
+
+ Native lang		Host		Data
+ -Math			 -Navigator    -User Generated
+ -JSON			 -Window	   - Model Real life Data
+ 				 -Document
+
+
+ flight = {
+	origin: "SFO",
+	destination: "DEN",
+	departureTime: "07:00 AM",
+	arrivalTime: "11:30 AM",
+	airline: "FML",
+	wifi: false,
+	distace: 800,
+	status: "delayed"
+	}
