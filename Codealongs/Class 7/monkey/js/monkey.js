@@ -21,20 +21,95 @@ var monkey1 ={
 name :"fido",
 species : "Capuchin Monkey",
 foodsEaten : ["banana", "peanut","watermelon"],
-methodName: monkeyIntroduce()
+eatSomething: function() {
+	var val1 = "Hello" + " My name is  " + this.name + " , ";
+	var val2 = "My species is " + this.species+ " and ";
+	var val3 = "I eat " + this.foodsEaten;
+return val1 + val2 + val3 ;	
+
+ }
 }
+
+// monkey1.eatSomething()
+
 var monkey2 ={
 
 name :"lido",
 species : "Dapuchin Monkey",
 foodsEaten : ["strawberry", "berry"],
-methodName: monkeyIntroduce()
+eatSomething: function() {
+	var val1 = "Hello" + " My name is  " + this.name + " , ";
+	var val2 = "My species is " + this.species+ " and ";
+	var val3 = "I eat " + this.foodsEaten;
+return val1 + val2 + val3 ;	
+
+ }
 }
 var monkey3={
 
 name :"mido",
 species : "Eapuchin Monkey",
 foodsEaten : ["melon"],
-methodName: monkeyIntroduce()
+eatSomething: function() {
+	var val1 = "Hello" + " My name is  " + this.name + " , ";
+	var val2 = "My species is " + this.species+ " and ";
+	var val3 = "I eat " + this.foodsEaten;
+return val1 + val2 + val3 ;	
+
+ }
 }
+
+ function Monkey(name, species, foodsEaten) {
+      this.name = name;
+      this.species = species;
+      this.foodsEaten =foodsEaten;
+}
+
+Monkey.prototype = {
+eatSomething: function(){
+    var val1 = "Hello" + " My name is  " + this.name + " , ";
+	var val2 = "My species is " + this.species+ " and ";
+	var val3 = "I eat " + this.foodsEaten;
+return val1 + val2 + val3 ;	
+    }
+}
+
+// Monkey.prototype = {
+//  drinkSomething: function(){
+//  	var val1 = "eat";
+//  	var val2 = "drink";
+//  	var val3 = "sleep";
+// return val1 + val2 + val3 ;	
+
+//  }
+
+// }
+
+var monkey4 = new Monkey("Sido", "newSpecies", "Berries");
+
+/*
+
+constructor can be defined like this:
+function Monkey(name, species){
+	this.name = name;
+	this.species = species;
+	this.foodsEaten = [];
+};
+Monkey.prototype = {
+	eatSomething: function(food){
+		console.log("eat Something", food);
+		this.foodsEaten.push(food);
+	},
+	introduce: function(){
+		console.log("fn eat Something");
+		return  "Hello" + " My name is  " + this.name + " , ";
+
+	}
+}
+
+}
+
+To return the length of a key you can use Object.keys(objectName).length
+
+*/
 
