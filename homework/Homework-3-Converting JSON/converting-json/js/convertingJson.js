@@ -53,6 +53,8 @@ http://jsonlint.com/
 Did it create a valid JSON string?
 */ 
 
+JSON.stringify(links);
+
 // Answer- Yes {commenting to make sure that the program still is executable}
 
 
