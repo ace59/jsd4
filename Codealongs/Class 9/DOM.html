@@ -1,0 +1,86 @@
+
+<head>
+	<title>DOM Practice</title>
+</head>
+<body>
+
+<h1>lorem</h1>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+</p>
+
+<h2></h2>
+
+<ul>
+	<li>Con
+	<li>Inc</li>
+	<li>Exe</li>
+	<li>
+		<p>Food</p>
+		<img width="100"src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg">
+
+
+	</li>
+</ul>
+
+<div>
+	
+</div>
+
+</body>
+ <script>
+ 	
+var div =document.querySelector("div");
+div.innerHTML = "<h2> shdfdh";
+div.innerHTML = "<h3> shdfdh";
+
+
+// Elements 
+var ul = document.querySelector("ul");
+
+//Technique-1 using createElement/append child 
+function createMenuItem(){
+	var li = document.createElement("li");
+	var p = document.createElement("p");
+	var img = document.createElement("img");
+
+p.innerHTML = "Food";
+img.src = "https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg";
+img.width ="100";
+
+	ul.appendChild(li);
+	li.appendChild(p);
+	li.appendChild(img);
+	
+
+
+	console.log(li);
+
+}
+
+function createMenuItemTemplate(){
+	
+	var li = document.createElement("li");
+	var template =
+		"<p> Beef Taco</p>" +
+		'<img src="https://images-gmi-pmc.edge-generalmills.com/a1e50cad-403a-47ce-aa10-62b8b8af5a4d.jpg">';
+	li.innerHTML = template;
+	ul.appendChild(li);
+
+}
+
+ </script>
+
+ <style type="text/css">
+ 	
+ 	img{
+ 		width: 100px;
+ 	}
+ </style>
