@@ -61,7 +61,9 @@ function flashstoplight(){
 	console.log("stop");
 	}
 function flashslowlight(){
+	divTl.classList.remove("stop");
 	divTl.classList.toggle("slow");
+	divTl.classList.remove("go");
 	console.log("slow");
 	}
 function flashgolight(){
