@@ -86,8 +86,6 @@ function flashalllight(){
 	setTimeout(flashgolight,1000);
 }
 
-
-
 // Structure
 // ----------------------------------------------
 

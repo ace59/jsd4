@@ -1,6 +1,7 @@
 
 
 // get a random gif
+// pass the tag
 function getGif(tag){
 var url = "http://api.giphy.com/v1/gifs/translate?s=superman&api_key=dc6zaTOxFJmzC" +tag;
 jQuery.getJSON(url,handleCats);	

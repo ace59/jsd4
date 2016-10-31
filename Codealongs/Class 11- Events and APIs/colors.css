@@ -1,0 +1,36 @@
+body{
+	background:	orange;
+
+}
+
+
+.skyblue{
+	color: rgb(135,206,235);
+}
+
+.circle {
+	width: 80px;
+	height: 80px;
+	background: blue;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+li{
+	display: inline-block;
+}
+
+.green{
+	background: rgb(85,107,47);
+}
+
+.red{
+	background: red;	
+}
+
+.rebeccablue{
+	background: rgb(102,51,153);
+}
+
+

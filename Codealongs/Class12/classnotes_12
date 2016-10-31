@@ -1,0 +1,12 @@
+1. Get cscript > element from DOM and store in variable
+2. Compile template 
+	- takes your source, compiles it, creates a handlebars template 
+	-handlebars.compile()
+3. evaluate the JSON to HTML
+	-context AKA the JSON data
+	-combine JSON with template to retun final HTML
+
+
+handlebars.compile()
+	-Input to  is string
+	-Output = function object

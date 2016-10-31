@@ -1,0 +1,21 @@
+img.closest('li') 
+
+element.closest()
+
+database returns a firebase reference
+
+Once you've firebase reference, you can do .set and .on
+
+
+1. Get the reference from the library
+2. write .set()
+3. Read .on()
+
+
+.set() takes one argument (in JSON), no need to convert to strings
+
+.on() takes 2 args, 1st is string and the second is callback function
+-callback function will be called when the value in the firebase changes
+-callback variable is a firebase snapshot
+
+Firebase snapshot gives you .val()
