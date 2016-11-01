@@ -38,7 +38,7 @@ function getDetails(event) {
 // ------------------------------------
 function updateMovies(json) {
 	console.log('updateMovies',json);
-	results.innerHTML = '';
+		results.innerHTML = '';
 	var templateFn = Handlebars.compile(resultsTemplate.innerHTML);
 	results.innerHTML = templateFn(json);
 

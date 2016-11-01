@@ -74,17 +74,6 @@ $(".results").on("click","li",function(){
 		json.Search.forEach(mainMovie);	
      }
 
-     function mainMovie(elem)
-     	
-
-
-
-
-
-
-     }
-
-
 
 });
 
