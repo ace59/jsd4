@@ -6,18 +6,12 @@ var results = document.querySelector(".results");
 var inputField = document.querySelector("input");
 var details = $(".details")
 
-
-
 // Structure
 // ----------------------------------------------
-
 
 // Events
 // ----------------------------------------------
 form.addEventListener('submit',movie);
-
-
-
 
 function movie(tag){
 	tag.preventDefault();
@@ -33,7 +27,6 @@ function getMovies(json){
 	json.Search.forEach(displayMovies);
 
 }
-
 
 function displayMovies(Search){
 	// Step 1 - create elements
@@ -76,10 +69,6 @@ $(".results").on("click","li",function(){
 
 
 });
-
-
-
-
 
 function detailView(movSelect){
 	movSelect.preventDefault();

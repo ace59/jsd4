@@ -1,5 +1,5 @@
 // Elements
-var searchBox = document.querySelector("form .search");
+var searchBx = document.querySelector("form .search");
 var searchBtn = document.getElementById("searchBtn");
 var form = document.querySelector("form");
 var results = document.querySelector(".results")
@@ -19,11 +19,11 @@ results.addEventListener('click', getDetails);
 // ----------------------------------------------
 function getMovies(event) {
 	event.preventDefault();
-	var search = searchBox.value;
-	// console.log(searchBox);
+	var search = searchBx.value;
+	// console.log(searchBx);
 	var url = "http://www.omdbapi.com/?s=" + search;
-	$.getJSON(url, updateMovies);
-	searchBox.value='';
+	$.getJSON(url, fetchMovies);
+	searchBx.value='';
 }
 
 function getDetails(event) {
@@ -36,8 +36,8 @@ function getDetails(event) {
 
 // Update page
 // ------------------------------------
-function updateMovies(json) {
-	console.log('updateMovies',json);
+function fetchMovies(json) {
+	console.log('fetchMovies',json);
 		results.innerHTML = '';
 	var templateFn = Handlebars.compile(resultsTemplate.innerHTML);
 	results.innerHTML = templateFn(json);
