@@ -1,0 +1,9 @@
+body{
+	background-color: rgb(102,51,153);
+}
+
+.map{
+	width:600px;
+	height: 400px;
+	margin: auto;
+}

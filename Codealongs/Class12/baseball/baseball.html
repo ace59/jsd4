@@ -13,15 +13,6 @@
 </head>
 <body>
 
-<script id="date-template" type= "text/x-handlebars-template">
-		<h2>{{dateDisplay}}</h2>
-</script>
-
-<script id="date-template" type= "text/x-handlebars-template">
-	{{#each games}}
-		<h2>{{dateDisplay}}</h2>
-	{{/each}}
-</script>
 
 <main>
 	<header>
@@ -37,10 +28,40 @@
 
 
 
+<script id="date-template" type="text/x-handlebars-template">
+	<h2>{{dateDisplay}}</h2>
+</script>
+
+
+<script id="game-template" type="text/x-handlebars-template">
+	{{#each games}}
+		<li class="game">
+			<p class="time">{{time}}</p>
+			<div class="team home">
+				<div>
+					<img src="{{home.logo}}">
+					<p class="name">{{home.name}}</p>
+				</div>
+				<div class="record">
+					({{home.wins}}-{{home.losses}})
+				</div>
+			</div>
+			<div class="team away">
+				<div>
+					<img src="{{away.logo}}">
+					<p class="name">{{away.name}}</p>
+				</div>
+				<div class="record">
+					({{away.wins}}-{{away.losses}})
+				</div>
+			</div>
+		</li>
+    {{/each}}
+</script>
 
 
 
-<!-- TODO: put handlebars templates here -->
+
 
 
 
@@ -117,6 +138,9 @@
 
 
 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 <script src="js/mockdata.js"></script>
 <script src="js/baseball.js"></script>
 </body>

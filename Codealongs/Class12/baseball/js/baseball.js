@@ -1,28 +1,37 @@
 // Elements
 // ------------------------------------------
-var date      = document.querySelector('.date');
-var games     = document.querySelector('.games');
-var dateTemplate = document.querySelector("#date-template");
+var date  = document.querySelector('.date');
+var games = document.querySelector('.games');
 
 
 // Templates
 // ------------------------------------------
-// ------------------------------------
+var dateTemplate = document.querySelector('#date-template');
+var gameTemplate = document.querySelector('#game-template');
 
 
-// Update page
-// ------------------------------------
-	function updateResult(json) {
-	console.log('updateResult',json);
 
 
-	//Handlebars step 2: compie the template from HTML source
-	var templateFn= Handlebars.compile(dateTemplate.innerHTML);
-	
-	// Handlebars step 3:
-	var html = templateFn(json);
-	games.innerHTML = html;
+// Date template
+// ------------------------------------------
 
-}
+// Compile the template's html source (a string)
+// into a template function (a function) 
+// by using Handlebars.compile()
+var templateFunction = Handlebars.compile(dateTemplate.innerHTML);
 
-updateResult(date);
+// Get the final HTML by calling the new template function 
+// and pass it JSON data as an argument
+var html = templateFunction(mockdata);
+
+// Insert the new HTML into the appropriate Element in the DOM
+date.innerHTML = html;
+
+
+
+// Games Template
+// (reusing variables from the date template)
+// ------------------------------------------
+templateFunction = Handlebars.compile(gameTemplate.innerHTML);
+html = templateFunction(mockdata);
+games.innerHTML = html;

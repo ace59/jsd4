@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphy Practice</title>
+</head>
+<body>
+
+<h1>Get all the news from Digg</h1>
+
+<section class="newsContent"></section>
+
+<!-- <ul id="FirstUL">
+	<li>
+		<div id="div1">http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG</div>
+		<img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
+		<p id="IdOfImage">ID of Image: <span>FiGiRei2ICzzG</span></p>
+	</li>
+	<li>
+		<div id="div1">http://media0.giphy.com/media/feqkVgjJpYtjy/200.gif</div>
+		<img src="http://media0.giphy.com/media/feqkVgjJpYtjy/200.gif">
+		<p id="IdOfImage"> ID of Image: <span>feqkVgjJpYtjy</span></p>
+	</li>
+</ul> -->
+
+<!-- Add a Handlebar Template to the HTML -->
+<!-- note the {{ and }} - they're called "mustaches" and Handlebars compiles what's between them with respect to the passed context. {{#each list}} iterated through the list and interpolate the properties of the context. -->
+<script id="diggTemplate" type="text/x-handlebars-template">
+{{#each data.feed}}
+       	<div class="newsHeadlines"> Title: {{content.title_alt}}
+       		<score>{{digg_score}}</score>
+    		<img src="{{content.header_image}}">
+    		<p id="sourceDomain">source Domain: <span>{{content.domain}}</span></p>
+    	</div>
+{{/each}}
+	
+
+
+
+
+
+
+
+
+<!--  -->
+
+<!-- Get source HTML from DOM -->
+
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+<script src="ashishFeedr.js"></script>
+</body>
+</html>

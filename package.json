@@ -1,0 +1,25 @@
+{
+  "name": "jsd4",
+  "version": "1.0.0",
+  "description": "my jsd4 project homeword and codealongs",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ace59/jsd4.git"
+  },
+  "author": "Ashish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ace59/jsd4/issues"
+  },
+  "homepage": "https://github.com/ace59/jsd4#readme"
+}
